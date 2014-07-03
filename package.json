@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "debug": "NODE_ENV=development DEBUG=weather node ./bin/www"
+    "debug": "NODE_ENV=development DEBUG=weather DB_DB=tessel-weather DB_HOST=localhost DB_PORT=27017 node ./bin/www"
   },
   "engines": {
     "node": "0.10.x"
@@ -16,6 +16,7 @@
     "debug": "~0.7.4",
     "express": "~4.2.0",
     "jade": "~1.3.0",
+    "mongodb": "^1.4.7",
     "morgan": "~1.0.0",
     "static-favicon": "~1.0.0"
   }
