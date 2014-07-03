@@ -1,6 +1,7 @@
 #!/usr/bin/env node
-var debug = require('debug')('tessel-weather');
-var app = require('../app');
+var debug = require('debug')('weather');
+var coffee = require('coffee-script/register');
+var app = require('../app.coffee');
 
 app.set('port', process.env.PORT || 3000);
 
